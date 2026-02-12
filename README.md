@@ -1,165 +1,191 @@
-> **FinInsight:** **AI-Powered** **Financial** **Analysis** **Platform**
+# 🚀 FinInsight
 
-**UniversityofMichigan-Dearborn\|** **CIS-5570**
-**–IntroductiontoBigData** **Instructor:**Dr.MohamedAbouelenien
+## AI-Powered Financial Analysis Platform
 
-**TeamMembers:**OweshChaiwala,Prakruthi
-NeelakantanahallyMayanna,NikhilReddy Kandadi,Yogendra SaiPavanNalam,Sai
-DeepakChandra
+**University of Michigan--Dearborn**\
+**CIS-5570 -- Introduction to Big Data**\
+**Instructor:** Dr. Mohamed Abouelenien
 
-**Project** **Overview**
+------------------------------------------------------------------------
 
-**FinInsight**isa scalable,modularplatformthatcombines **Big** **Data**
-**pipelines**with**AI** **models**to perform real-timefinancial
-analysis.
+# 📌 Project Overview
 
-GivenlargedatasetsofSECfilings,newsarticles,andRedditfinancediscussions,theplatform:
+**FinInsight** is a scalable, modular financial intelligence platform
+that integrates **Big Data pipelines** with **Artificial Intelligence
+models** to perform real-time financial analysis.
 
-> • Cleansandprocessesdiversefinancial textsusing **PySpark**
->
-> • Enrichescontentwith**Spark**
-> **NLP**(NamedEntityRecognition&SentimentAnalysis)
->
-> • Embedsdocumentsusing**Sentence** **Transformers**
->
-> • Retrievesrelevantinformationusing**FAISS** **vector** **search**
->
-> • Generateshuman-likeanswersusing**FLAN-T5**witha
-> Retrieval-AugmentedGeneration (RAG) approach
+The system processes large-scale datasets including:
 
-**Goal:**
+-   📄 SEC Filings\
+-   📰 Financial News Articles\
+-   💬 Reddit Finance Discussions
 
-Enableuserstoquerymassivefinancial
-datasetsandgetcontext-grounded,explainable answers**inseconds**.
+It transforms raw financial text into **context-grounded, explainable
+AI-generated insights in seconds.**
 
-**System** **Architecture**
+------------------------------------------------------------------------
 
-**Tech** **Stack**
+# 🎯 Objective
 
-> • **ApacheSpark**(PySpark) —Distributeddataprocessing
->
-> • **SparkNLP**—Financial entityrecognitionandsentimentextraction
->
-> • **Sentence** **Transformers**—Textembedding(MiniLM-L6-v2 model)
->
-> • **FAISS**—Densevector similaritysearch
->
-> • **LangChain**—Promptconstructionandorchestration
->
-> • **FLAN-T5** **Base**—Largelanguagemodel forquestionanswering
->
-> • **GoogleColab**—Developmentenvironment
->
-> **Project** **Structure**
->
-> bash
->
-> CopyEdit
->
-> FinInsight/
->
-> ├──notebooks/
->
-> │ └── AI_Powered_Financial_Analysis_FILE\_(2).ipynb
->
-> ├──data/
->
-> │ ├──CNBC_financial_articles_2.json
->
-> │ ├──CNBC_financial_news_1.json
->
-> │ └── reddit_posts.json
->
-> ├──diagrams/
->
-> │ ├──system_architecture.png
->
-> │ ├──pyspark_ingestion_flow.png
->
-> │ ├──rag_pipeline_diagram.png
->
-> ├──screenshots/
->
-> │ └── (retrieval examples,queryresponses)
->
-> ├──README.md
->
-> └── requirements.txt
->
-> **How** **toRun**
->
-> **1.** **Clonetherepository:**
+> Enable users to query massive financial datasets using natural
+> language and receive accurate, explainable, context-aware answers in
+> real time.
 
-||
-||
-||
-||
-||
-||
+------------------------------------------------------------------------
 
-> **2.** **Installdependencies:**
+# 🏗 System Architecture
 
-||
-||
-||
-||
-||
+FinInsight follows a **Retrieval-Augmented Generation (RAG)**
+architecture:
 
-> **3.** **Launch** **theJupyter** **Notebook:**
+### 1️⃣ Data Processing Layer
 
-||
-||
-||
-||
-||
+-   Clean and preprocess financial text using **PySpark**
+-   Extract entities & sentiment using **Spark NLP**
 
-> **4.** **Follow** **thecodecells:**
+### 2️⃣ Embedding Layer
 
-||
-||
-||
-||
-||
-||
-||
+-   Generate dense vector embeddings using **Sentence Transformers
+    (MiniLM-L6-v2)**
 
-> **Sample** **Results**
+### 3️⃣ Retrieval Layer
 
-||
-||
-||
-||
-||
+-   Perform semantic similarity search with **FAISS**
 
-> **Evaluation:**
->
-> • **Top-3** **DocumentRelevance:**~87%
->
-> • **Answer** **Clarity:**High
->
-> • **Grounding(ContextMatch):**Medium(~0.5)
->
-> **Future** **Work**
->
-> • Real-timeingestionvia Kafka orSparkStreaming
->
-> • Fine-tuningFLAN-T5 onfinancial datasets
->
-> • Front-endwebappforpublic financial Q&A
->
-> • Expandtoearningscalls,SECexhibits,andinvestorreports
+### 4️⃣ Generation Layer
 
-**References**
+-   Construct prompts via **LangChain**
+-   Generate answers using **FLAN-T5 (Base)**
 
-> • Spark NLP Documentation
->
-> • [<u>FAISS byFacebook
-> Research</u>](https://github.com/facebookresearch/faiss)
->
-> • [<u>SentenceTransformers</u>](https://www.sbert.net/)
->
-> • LangChainFramework
->
-> • FLAN-T5 onHuggingFace
->
-> • [<u>FNSPID Dataset(arXiv)</u>](https://arxiv.org/abs/2402.06698)
+------------------------------------------------------------------------
+
+# 🛠 Tech Stack
+
+  Category                  Technology
+  ------------------------- --------------------------------------
+  Distributed Processing    Apache Spark (PySpark)
+  NLP                       Spark NLP
+  Embeddings                Sentence Transformers (MiniLM-L6-v2)
+  Vector Search             FAISS
+  Orchestration             LangChain
+  Language Model            FLAN-T5 Base
+  Development Environment   Google Colab
+
+------------------------------------------------------------------------
+
+# 📂 Project Structure
+
+``` bash
+FinInsight/
+│
+├── notebooks/
+│   └── AI_Powered_Financial_Analysis_FILE_(2).ipynb
+│
+├── data/
+│   ├── CNBC_financial_articles_2.json
+│   ├── CNBC_financial_news_1.json
+│   └── reddit_posts.json
+│
+├── diagrams/
+│   ├── system_architecture.png
+│   ├── pyspark_ingestion_flow.png
+│   ├── rag_pipeline_diagram.png
+│
+├── screenshots/
+│   └── (retrieval examples, query responses)
+│
+├── README.md
+└── requirements.txt
+```
+
+------------------------------------------------------------------------
+
+# ⚙️ How to Run
+
+### 1️⃣ Clone the Repository
+
+``` bash
+git clone https://github.com/OweshC12/FinInsight-AI-Powered-Financial-Analysis.git
+cd FinInsight-AI-Powered-Financial-Analysis
+```
+
+### 2️⃣ Install Dependencies
+
+``` bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Launch the Jupyter Notebook
+
+``` bash
+jupyter notebook
+```
+
+Open:
+
+    notebooks/AI_Powered_Financial_Analysis_FILE_(2).ipynb
+
+### 4️⃣ Execute the Notebook
+
+Follow the code cells sequentially to: - Load and preprocess data\
+- Generate embeddings\
+- Build FAISS index\
+- Query the system\
+- Generate AI-powered responses
+
+------------------------------------------------------------------------
+
+# 📊 Evaluation Results
+
+  Metric               Result
+  -------------------- ------------------
+  Top-3 Relevance      \~87%
+  Semantic Retrieval   Strong
+  Context Grounding    \~0.5 (Moderate)
+  Response Quality     High
+
+------------------------------------------------------------------------
+
+# 🚀 Future Enhancements
+
+-   Real-time ingestion via **Kafka / Spark Streaming**\
+-   Fine-tuning FLAN-T5 on financial corpora\
+-   Front-end web application for public financial Q&A\
+-   Expansion to earnings calls, SEC exhibits, and investor reports
+
+------------------------------------------------------------------------
+
+# 📚 References
+
+-   Spark NLP Documentation\
+-   FAISS by Facebook Research\
+-   Sentence Transformers (SBERT)\
+-   LangChain Framework\
+-   FLAN-T5 on HuggingFace\
+-   FNSPID Dataset (arXiv: 2402.06698)
+
+------------------------------------------------------------------------
+
+# 🏆 Key Contributions
+
+-   Designed scalable Spark-based ingestion pipeline\
+-   Implemented full RAG pipeline\
+-   Built semantic search using FAISS\
+-   Integrated financial NER & sentiment analysis\
+-   Delivered explainable AI-generated financial insights
+
+------------------------------------------------------------------------
+
+# 📈 Why This Project Matters
+
+FinInsight demonstrates integration of:
+
+-   Big Data Engineering\
+-   NLP\
+-   Vector Databases\
+-   Generative AI\
+-   Financial Analytics
+
+It showcases production-level architecture combining **distributed
+systems + AI orchestration**, making it highly relevant for Data
+Science, AI Engineering, and Financial Analytics roles.
