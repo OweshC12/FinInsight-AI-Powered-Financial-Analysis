@@ -1,4 +1,4 @@
-# 🚀 FinInsight
+# FinInsight
 
 ## AI-Powered Financial Analysis Platform
 
@@ -8,7 +8,7 @@
 
 ------------------------------------------------------------------------
 
-# 📌 Project Overview
+# Project Overview
 
 **FinInsight** is a scalable, modular financial intelligence platform
 that integrates **Big Data pipelines** with **Artificial Intelligence
@@ -25,7 +25,7 @@ AI-generated insights in seconds.**
 
 ------------------------------------------------------------------------
 
-# 🎯 Objective
+# Objective
 
 > Enable users to query massive financial datasets using natural
 > language and receive accurate, explainable, context-aware answers in
@@ -33,33 +33,33 @@ AI-generated insights in seconds.**
 
 ------------------------------------------------------------------------
 
-# 🏗 System Architecture
+# System Architecture
 
 FinInsight follows a **Retrieval-Augmented Generation (RAG)**
 architecture:
 
-### 1️⃣ Data Processing Layer
+### 1.Data Processing Layer
 
 -   Clean and preprocess financial text using **PySpark**
 -   Extract entities & sentiment using **Spark NLP**
 
-### 2️⃣ Embedding Layer
+### 2.Embedding Layer
 
 -   Generate dense vector embeddings using **Sentence Transformers
     (MiniLM-L6-v2)**
 
-### 3️⃣ Retrieval Layer
+### 3.Retrieval Layer
 
 -   Perform semantic similarity search with **FAISS**
 
-### 4️⃣ Generation Layer
+### 4.Generation Layer
 
 -   Construct prompts via **LangChain**
 -   Generate answers using **FLAN-T5 (Base)**
 
 ------------------------------------------------------------------------
 
-# 🛠 Tech Stack
+# Tech Stack
 
   Category                  Technology
   ------------------------- --------------------------------------
@@ -73,7 +73,7 @@ architecture:
 
 ------------------------------------------------------------------------
 
-# 📂 Project Structure
+# Project Structure
 
 ``` bash
 FinInsight/
@@ -100,22 +100,22 @@ FinInsight/
 
 ------------------------------------------------------------------------
 
-# ⚙️ How to Run
+# How to Run
 
-### 1️⃣ Clone the Repository
+### 1.Clone the Repository
 
 ``` bash
 git clone https://github.com/OweshC12/FinInsight-AI-Powered-Financial-Analysis.git
 cd FinInsight-AI-Powered-Financial-Analysis
 ```
 
-### 2️⃣ Install Dependencies
+### 2.Install Dependencies
 
 ``` bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Launch the Jupyter Notebook
+### 3.Launch the Jupyter Notebook
 
 ``` bash
 jupyter notebook
@@ -125,7 +125,7 @@ Open:
 
     notebooks/AI_Powered_Financial_Analysis_FILE_(2).ipynb
 
-### 4️⃣ Execute the Notebook
+### 4.Execute the Notebook
 
 Follow the code cells sequentially to: - Load and preprocess data\
 - Generate embeddings\
@@ -135,7 +135,7 @@ Follow the code cells sequentially to: - Load and preprocess data\
 
 ------------------------------------------------------------------------
 
-# 📊 Evaluation Results
+# Evaluation Results
 
   Metric               Result
   -------------------- ------------------
@@ -146,7 +146,7 @@ Follow the code cells sequentially to: - Load and preprocess data\
 
 ------------------------------------------------------------------------
 
-# 🚀 Future Enhancements
+# Future Enhancements
 
 -   Real-time ingestion via **Kafka / Spark Streaming**\
 -   Fine-tuning FLAN-T5 on financial corpora\
@@ -155,7 +155,7 @@ Follow the code cells sequentially to: - Load and preprocess data\
 
 ------------------------------------------------------------------------
 
-# 📚 References
+# References
 
 -   Spark NLP Documentation\
 -   FAISS by Facebook Research\
@@ -166,7 +166,7 @@ Follow the code cells sequentially to: - Load and preprocess data\
 
 ------------------------------------------------------------------------
 
-# 🏆 Key Contributions
+# Key Contributions
 
 -   Designed scalable Spark-based ingestion pipeline\
 -   Implemented full RAG pipeline\
@@ -176,7 +176,7 @@ Follow the code cells sequentially to: - Load and preprocess data\
 
 ------------------------------------------------------------------------
 
-# 📈 Why This Project Matters
+# Why This Project Matters
 
 FinInsight demonstrates integration of:
 
