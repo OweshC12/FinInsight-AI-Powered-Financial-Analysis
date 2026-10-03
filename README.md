@@ -1,5 +1,6 @@
 # FinInsight
 
+
 ## AI-Powered Financial Analysis Platform
 
 **University of Michigan--Dearborn**\
